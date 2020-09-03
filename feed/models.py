@@ -6,7 +6,7 @@ class Feed(models.Model):
     title = models.CharField(max_length=500)
     description = models.CharField(max_length=500)
     published_at = models.DateTimeField(auto_now_add=True, db_index=True)
-    thumbnail_url = models.CharField(max_length=1000)
+    thumbnail_url = models.CharField(max_length=500)
 
     class Meta:
         indexes = [
